@@ -45,11 +45,11 @@ Create a warehouse.
 ```sql
 create or replace warehouse USERX_WH with 
 	warehouse_size = 'XSMALL' 
-    warehouse_type = 'STANDARD'
-    auto_resume = true 
-    auto_suspend = 600   
-    max_cluster_count = 2
-    min_cluster_count = 1;
+  warehouse_type = 'STANDARD'
+  auto_resume = true 
+  auto_suspend = 600   
+  max_cluster_count = 2
+  min_cluster_count = 1;
 ```
 
 ## 3. Ingest data
@@ -271,6 +271,7 @@ Select refresh rate for **1 minute** and then select your warehouse created on S
 ![Alt text](autofulfillment.png)
 
 Select **Save** and in the listing page select **Publish**. And that's it! You have just shared data with another Snowflake account. Your instructor will show how the data is displayed in the consumer account. 
+
 
 ## 6. Consume data available via Private Listing
 
