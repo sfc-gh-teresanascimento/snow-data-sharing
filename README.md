@@ -26,8 +26,8 @@ Start by setting the context for your user. In all instances throughout this lab
 use role ACCOUNTADMIN;
 ```
 
-[!IMPORTANT]  
-In order to create unique objects in Snowflake, make sure to use your user name as part of the object name. For example, if your user name is USER1, create your database as USERX_WH.
+[!NOTE]  
+In order to create unique objects in Snowflake, make sure to use your user name as part of the object name. For example, if your user name is USER1, create your database as USER1_WH.
 
 Create a database.
 
@@ -145,7 +145,7 @@ DESCRIBE TABLE CAR_SALES_TB;
 
 Recreate the file format with the valid options.
 ```sql
-CREATE OR REPLACE FILE FORMAT USER0_CSV
+CREATE OR REPLACE FILE FORMAT USERX_CSV
   TYPE = csv
   FIELD_DELIMITER = ','
   FIELD_OPTIONALLY_ENCLOSED_BY = '"'
